@@ -17,7 +17,7 @@ services:
       - --collation-server=utf8mb4_unicode_ci
       - --init-connect=SET NAMES utf8mb4
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - mysql-data:/var/lib/mysql
       - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
